@@ -1,0 +1,37 @@
+.bg {
+    background-color: dimgray;
+}
+
+.Title {
+    text-align: center;
+}
+
+.Description {
+    text-align: center;
+}
+
+.InputField {
+    background-color: darkgrey;
+}
+
+.InputBase {
+    background-color: darkgray;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.Input {
+    text-align: center;
+}
+
+.Output {
+    text-align: center;
+}
+
+.OutputBase {
+    background-color: darkgray;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
