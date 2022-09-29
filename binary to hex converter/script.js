@@ -39,15 +39,15 @@ function HexToDec(bin) {
 }
 
 function DecToBin(dec) {
-    return parseInt(dec,2).toString()
+    return Number(dec).toString(2)
 }
 
 function DecToOct(dec) {
-    return parseInt(dec,8).toString()
+    return Number(dec).toString(8)
 }
 
 function DecToHex(dec) {
-    return parseInt(dec,16).toString()
+    return Number(dec).toString(16)
 }
 
 
@@ -83,10 +83,10 @@ function Conversion() {
             OutputTextBox.innerHTML = DecToBin(halfway)
             break
         case 8:
-            OutputTextBox.innerHTML = OctToDec(halfway)
+            OutputTextBox.innerHTML = DecToOct(halfway)
             break
         case 16:
-            OutputTextBox.innerHTML = HexToDec(halfway)
+            OutputTextBox.innerHTML = DecToHex(halfway)
             break
         default:
             OutputTextBox.innerHTML = halfway
@@ -97,4 +97,3 @@ function Conversion() {
 InputTextBox.addEventListener('keyup', () => {
     Conversion()
 })
-
